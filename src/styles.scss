@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$btn-blue: #2B2AFC;
+
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Inter', sans-serif;
+}
+
+
+body {
+   height: 90vh;
+   width: 900px;
+}
+ 
+body.dark {
+   background: #222;
+   color:white;
+   border: 1px solid gray;
+
+   .card {
+      border: 1px solid gray;
+      background-color: #222;
+      
+
+      .card-header {
+         border-bottom: 1px solid yellow;
+      }
+   }
+
+   .btn-primary {
+      background-color: $btn-blue !important;
+      border-color: $btn-blue !important;
+   }
+   
+}
+ 
+body.light {
+   background: white;
+   color:#222;
+   border: 1px solid gray;
+
+   .btn-primary {
+      background-color: $btn-blue !important;
+      border-color: $btn-blue !important;
+   }
+}
+
+
+
+
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
