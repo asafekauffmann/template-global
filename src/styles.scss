@@ -46,6 +46,20 @@ body.light {
       }
    }
 
+   // Table
+   table {
+
+      tr:hover {
+         background-color: #F0F3F2;
+      }
+   }
+
+
+   // Pagination
+   .page-link {
+      color: $btn-blue;
+   }
+
 
 }
 
@@ -109,7 +123,37 @@ body.dark {
       
    }
 
+   // Table
+   table {
+      color: white;
+      border-bottom: 1px solid gray;
 
+      tr:hover {
+         background-color: #363535;
+         color: $btn-blue;
+      }
+
+      td {
+         color: gray;
+      }
+   }
+
+
+   // Pagination
+   .page-link {
+      background-color: #2b2b2b;
+      border: 1px solid #424242;
+      color: white;
+   }
+
+   .page-link:hover {
+      color: $btn-blue;
+      background-color: #363535;
+   }
+
+   
+
+      
    
    
 }
