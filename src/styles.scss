@@ -4,7 +4,6 @@
 // Variables color
 $btn-blue: #2B2AFC;
 
-
 * {
    margin: 0;
    padding: 0;
@@ -12,12 +11,10 @@ $btn-blue: #2B2AFC;
    box-sizing: border-box;
 }
 
-
 body {
    height: 2000px;
    width: 100%;
 }
-
 
 // Theme Light
 body.light {
@@ -35,7 +32,6 @@ body.light {
       text-decoration: none;
       color: $btn-blue;
    }
-
 
    // Acordeon
    .accordion-item {
@@ -79,10 +75,6 @@ body.light {
 
 
 }
-
-
-
-
 
 
 
@@ -155,7 +147,6 @@ body.dark {
       }
    }
 
-
    // Pagination
    .page-link {
       background-color: #1b1b1b;
@@ -182,14 +173,12 @@ body.dark {
       border: 1px solid #424242;
    }
 
-
    // Checks
    .form-check-input:checked {
       color:$btn-blue;
       background-color: $btn-blue;
       border: 1px solid $btn-blue;
    }
-
 
    // tabs ngx-bootstrap
    a.nav-link {
