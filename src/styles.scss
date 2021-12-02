@@ -37,14 +37,14 @@ body.light {
 
    // Acordeon
    .accordion-item {
-      width: 600px;
+      width: 640px;
 
       .accordion-button {
          background-color: rgba(0, 0, 0, 0.03);
       }
    }
 
-   
+
 }
 
 
@@ -83,14 +83,27 @@ body.dark {
 
    // Acordeon
    .accordion-item {
-      width: 600px;
-      border: 1px solid #424242;
+      width: 640px;
+      border: 1px solid #2b2b2b;
       background-color: #1b1b1b;
      
       .accordion-button {
          background-color: #2b2b2b;
          color: white;
       }
+   }
+
+   .dropdown-menu {
+      background-color: #1b1b1b;
+
+      a.dropdown-item {
+         color: white;
+      }
+
+      a.dropdown-item:hover {
+         background-color: #363535; 
+      }
+      
    }
 
 
