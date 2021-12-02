@@ -48,17 +48,34 @@ body.light {
 
    // Table
    table {
-
       tr:hover {
          background-color: #F0F3F2;
       }
    }
 
-
    // Pagination
    .page-link {
       color: $btn-blue;
    }
+
+   // Checks
+   .form-check-input:checked {
+      color:$btn-blue;
+      background-color: $btn-blue;
+      border: 1px solid $btn-blue;
+   }
+
+   // tabs ngx-bootstrap
+   a.nav-link {
+      color: $btn-blue;
+   }
+
+   .nav-tabs .nav-link.active, 
+   .nav-tabs .nav-item.show .nav-link {
+      color: $btn-blue; 
+   }
+
+   
 
 
 }
@@ -151,7 +168,41 @@ body.dark {
       background-color: #363535;
    }
 
-   
+   // Form input
+   .form-control {
+      background-color: #2b2b2b;
+      color: white;
+      border: 1px solid #424242;
+   }
+
+   // Form select options
+   .form-select {
+      background-color: #2b2b2b;
+      color: white;
+      border: 1px solid #424242;
+   }
+
+
+   // Checks
+   .form-check-input:checked {
+      color:$btn-blue;
+      background-color: $btn-blue;
+      border: 1px solid $btn-blue;
+   }
+
+
+   // tabs ngx-bootstrap
+   a.nav-link {
+      color: $btn-blue;
+   }
+
+   .nav-tabs .nav-link.active, 
+   .nav-tabs .nav-item.show .nav-link {
+      background-color: #2b2b2b;
+      color: $btn-blue;
+      border: 1px solid #424242;
+   }
+  
 
       
    
