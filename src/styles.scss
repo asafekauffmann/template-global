@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+// Variables color
 $btn-blue: #2B2AFC;
 
 
@@ -18,6 +19,7 @@ body {
 }
 
 
+// Theme Light
 body.light {
    background: white;
    color:#222222;
@@ -53,7 +55,7 @@ body.light {
 
 
 
-
+// Theme Dark
 body.dark {
    background: #222222;
    color:white;
@@ -93,6 +95,7 @@ body.dark {
       }
    }
 
+   // Button Dropdown
    .dropdown-menu {
       background-color: #1b1b1b;
 
