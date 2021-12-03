@@ -8,6 +8,7 @@ import { TestComponent } from './test/test.component';
 import { BootModelComponent } from './boot-model/boot-model.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ModalComponent } from './modal/modal.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ModalComponent } from './modal/modal.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
