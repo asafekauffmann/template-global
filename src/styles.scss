@@ -4,17 +4,19 @@
 // Variables color
 $btn-blue: #2B2AFC;
 
-// Light
+
+// Light Variables
 $white-body: #FBFCFC;
 $gray-hover-white: #F0F3F2;
 
 
-// Dark
-$gray-body: #222222;
+// Dark Variables
+$gray-body: #1b1b1b;
 $gray-header: #2b2b2b;
 $gray-content: #1b1b1b;
 $gray-border: #424242;
 $txt-white: #F7F9F9;
+
 
 
 * {
@@ -29,9 +31,11 @@ body {
    width: 100%;
 }
 
+
+
 // Theme Light
 body.light {
-   background: $white-body;
+   background-color: $white-body;
    color:#222222;
    
    // Buttom
@@ -63,8 +67,12 @@ body.light {
    }
 
    // Pagination
-   .page-link {
-      color: $btn-blue;
+   .pagination {
+      padding-left: 400px;
+
+      .page-link {
+         color: $btn-blue;
+      }
    }
 
    // Checks
@@ -107,7 +115,7 @@ body.light {
 
 // Theme Dark
 body.dark {
-   background: $gray-body;
+   background-color: $gray-body;
    color:$txt-white;
    
    // Buttom
@@ -147,7 +155,7 @@ body.dark {
 
    // Button Dropdown
    .dropdown-menu {
-      background-color: $gray-content;
+      background-color: #222222;
 
       a.dropdown-item {
          color: $txt-white;
@@ -175,16 +183,22 @@ body.dark {
    }
 
    // Pagination
-   .page-link {
-      background-color: $gray-content;
-      border: 1px solid $gray-border;
-      color: $txt-white;
-   }
+   .pagination {
+      padding-left: 400px;
 
-   .page-link:hover {
-      color: $btn-blue;
-      background-color: #363535;
+      .page-link {
+         background-color: $gray-content;
+         border: 1px solid $gray-border;
+         color: $txt-white;
+      }
+   
+      .page-link:hover {
+         color: $btn-blue;
+         background-color: #363535;
+      }
+
    }
+   
 
    // Form input
    .form-control {
