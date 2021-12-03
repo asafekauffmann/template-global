@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestComponent } from './test/test.component';
 import { BootModelComponent } from './boot-model/boot-model.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    BootModelComponent
+    BootModelComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
