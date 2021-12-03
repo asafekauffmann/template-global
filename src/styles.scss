@@ -192,8 +192,18 @@ body.dark {
       border: 1px solid #424242;
    }
   
+   // Component ngx-tag Modal
+   .modal-content {
+      border: 1px solid #2b2b2b;
+      background-color: #1b1b1b;
+      color: white;
+      height: 400px;
 
-      
+      .btn-close {
+         background: transparent url(./assets/icons/button-close.png) center/1em auto no-repeat;
+
+      }
+   }  
    
    
 }
