@@ -7,7 +7,7 @@ $btn-blue: #2B2AFC;
 
 // Light Variables
 $white-body: #FBFCFC;
-$gray-hover-white: #F0F3F2;
+$gray-hover-white: #E1E4E7;
 
 
 // Dark Variables
@@ -36,13 +36,22 @@ body {
 
 // Theme Light
 body.light {
-   background-color: $white-body;
+   background-color: $white-body ;
    color:#222222;
    
    // Buttom
    .btn-primary {
       background-color: $btn-blue !important;
       border-color: $btn-blue !important;
+   }
+
+   .card {
+      border: 1px solid $gray-hover-white;
+
+      .card-header {
+         background-color: $gray-hover-white;
+         border-bottom: none;
+      }
    }
 
    // Menu migalha
@@ -54,9 +63,10 @@ body.light {
    // Acordeon
    .accordion-item {
       width: 640px;
-
+      border: 1px solid rgb(225, 228, 231);
+      
       .accordion-button {
-         background-color: rgba(0, 0, 0, 0.03);
+         background-color: rgb(225, 228, 231);
       }
    }
 
