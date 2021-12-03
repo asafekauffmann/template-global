@@ -4,6 +4,19 @@
 // Variables color
 $btn-blue: #2B2AFC;
 
+// Light
+$white-body: #FBFCFC;
+$gray-hover-white: #F0F3F2;
+
+
+// Dark
+$gray-body: #222222;
+$gray-header: #2b2b2b;
+$gray-content: #1b1b1b;
+$gray-border: #424242;
+$txt-white: #F7F9F9;
+
+
 * {
    margin: 0;
    padding: 0;
@@ -18,7 +31,7 @@ body {
 
 // Theme Light
 body.light {
-   background: white;
+   background: $white-body;
    color:#222222;
    
    // Buttom
@@ -45,7 +58,7 @@ body.light {
    // Table
    table {
       tr:hover {
-         background-color: #F0F3F2;
+         background-color: $gray-hover-white;
       }
    }
 
@@ -63,7 +76,12 @@ body.light {
 
    // tabs ngx-bootstrap
    a.nav-link {
+      background-color: $white-body;
       color: $btn-blue;
+   }
+
+   .nav-link.active {
+      background-color: $gray-hover-white;
    }
 
    .nav-tabs .nav-link.active, 
@@ -81,10 +99,16 @@ body.light {
 
 
 
+
+
+
+
+
+
 // Theme Dark
 body.dark {
-   background: #222222;
-   color:white;
+   background: $gray-body;
+   color:$txt-white;
    
    // Buttom
    .btn-primary {
@@ -94,11 +118,11 @@ body.dark {
 
    // Card
    .card {
-      border: 1px solid #2b2b2b;
-      background-color: #1b1b1b;
+      border: 1px solid $gray-header;
+      background-color: $gray-content;
       
       .card-header {
-         background-color: #2b2b2b;
+         background-color: $gray-header;
          border-bottom: none;
       }
    }
@@ -112,21 +136,21 @@ body.dark {
    // Acordeon
    .accordion-item {
       width: 640px;
-      border: 1px solid #2b2b2b;
-      background-color: #1b1b1b;
+      border: 1px solid $gray-header;
+      background-color: $gray-content;
      
       .accordion-button {
-         background-color: #2b2b2b;
-         color: white;
+         background-color: $gray-header;
+         color: $txt-white;
       }
    }
 
    // Button Dropdown
    .dropdown-menu {
-      background-color: #1b1b1b;
+      background-color: $gray-content;
 
       a.dropdown-item {
-         color: white;
+         color: $txt-white;
       }
 
       a.dropdown-item:hover {
@@ -137,9 +161,9 @@ body.dark {
 
    // Table
    table {
-      color: white;
+      color: $txt-white;
       border-bottom: 1px solid gray;
-      background-color: #222222;
+      background-color: $gray-body;
 
       tr:hover {
          background-color: #363535;
@@ -152,9 +176,9 @@ body.dark {
 
    // Pagination
    .page-link {
-      background-color: #1b1b1b;
-      border: 1px solid #424242;
-      color: white;
+      background-color: $gray-content;
+      border: 1px solid $gray-border;
+      color: $txt-white;
    }
 
    .page-link:hover {
@@ -164,16 +188,16 @@ body.dark {
 
    // Form input
    .form-control {
-      background-color: #2b2b2b;
-      color: white;
-      border: 1px solid #424242;
+      background-color: $gray-header;
+      color: $txt-white;
+      border: 1px solid $gray-border;
    }
 
    // Form select options
    .form-select {
-      background-color: #2b2b2b;
-      color: white;
-      border: 1px solid #424242;
+      background-color: $gray-header;
+      color: $txt-white;
+      border: 1px solid $gray-border;
    }
 
    // Checks
@@ -190,19 +214,19 @@ body.dark {
 
    .nav-tabs .nav-link.active, 
    .nav-tabs .nav-item.show .nav-link {
-      background-color: #2b2b2b;
+      background-color: $gray-header;
       color: $btn-blue;
-      border: 1px solid #424242;
+      border: 1px solid $gray-border;
    }
   
    // Component ngx-tag Modal
    .modal-content {
-      background-color: #1b1b1b;
-      color: white;
+      background-color: $gray-content;
+      color: $txt-white;
 
       .modal-header {
-         border-bottom: 1px solid #2b2b2b;
-         background-color: #2b2b2b;
+         border-bottom: 1px solid $gray-header;
+         background-color: $gray-header;
 
          .btn-close {
             background: transparent url(./assets/icons/button-close.png) center/1em auto no-repeat;
