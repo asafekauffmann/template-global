@@ -9,7 +9,7 @@ $btn-blue: #2B2AFC;
 $white-body: #F1F1F1;
 $w-gray-header: #E1E4E7;
 $w-gray-border: #E1E4E7;
-
+$txt-dark: #222222;
 $gray-hover-white: #E1E4E7;
 
 
@@ -41,7 +41,7 @@ body {
 // Theme Light
 body.light {
    background-color: $white-body ;
-   color:#222222;
+   color: $txt-dark;
    
    // Buttom
    .btn-primary {
@@ -77,6 +77,8 @@ body.light {
 
    // Table
    table {
+      background-color: white;
+
       tr:hover {
          background-color: $gray-hover-white;
       }
@@ -102,6 +104,7 @@ body.light {
    a.nav-link {
       background-color: $white-body;
       color: $btn-blue;
+      border: 1px solid $w-gray-border;
    }
 
    .nav-link.active {
@@ -247,13 +250,18 @@ body.dark {
       color: $btn-blue;
    }
 
+   .nav-tabs {
+      border-bottom: 1px solid $d-gray-border;
+   }
+
    .nav-tabs .nav-link.active, 
    .nav-tabs .nav-item.show .nav-link {
       background-color: $d-gray-header;
       color: $btn-blue;
       border: 1px solid $d-gray-border;
    }
-  
+
+
    // Component ngx-tag Modal
    .modal-content {
       background-color: $d-gray-content;
