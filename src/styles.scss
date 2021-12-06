@@ -138,8 +138,13 @@ body.light {
       }
    }
    
+   // Date Picker
+   .bs-datepicker-head {
+      background-color: $btn-blue !important;
+   }
+      
+      
    
-
 }
 
 
@@ -300,6 +305,10 @@ body.dark {
    .bs-datepicker-container {
       background-color: $d-gray-body;
       box-shadow: none;
+
+      .bs-datepicker-head {
+         background-color: $btn-blue !important;
+      }
       
       .bs-datepicker-body {
          border: 1px solid $d-gray-border;
