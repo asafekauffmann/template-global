@@ -4,12 +4,13 @@
 // Variables color
 $btn-blue: #2B2AFC;
 $btn-blue-dark: #213C78;
+$btn-blue-light: #2037b4;
 $orange: #FC9109;
 
 
 // Light Variables
 $white-body: #F1F1F1;
-$w-gray-header: #E1E4E7;
+$w-gray-header:#DEE2E6 /* #E1E4E7 */; 
 $w-gray-border: #E1E4E7;
 $gray-hover-white: #E1E4E7;
 
@@ -50,8 +51,8 @@ body.light {
    
    // Buttom
    .btn-primary {
-      background-color: $btn-blue !important;
-      border-color: $btn-blue !important;
+      background-color: $btn-blue-light !important;
+      border-color: $btn-blue-light !important;
    }
 
    .btn:focus {
@@ -123,9 +124,9 @@ body.light {
 
    // Checks
    .form-check-input:checked {
-      color:$btn-blue;
-      background-color: $btn-blue;
-      border: 1px solid $btn-blue;
+      color: $btn-blue-light;
+      background-color:  $btn-blue-light;
+      border: 1px solid  $btn-blue-light;
    }
 
    // Tabs ngx-bootstrap
@@ -135,13 +136,14 @@ body.light {
       border: 1px solid $w-gray-border;
    }
 
-   .nav-link.active {
+   .nav-link.active:hover {
       background-color: $w-gray-header;
+      border-bottom: $w-gray-header;
    }
 
    .nav-tabs .nav-link.active, 
    .nav-tabs .nav-item.show .nav-link {
-      color: $btn-blue; 
+      color:  $btn-blue-light; 
    }
 
    
@@ -186,7 +188,7 @@ body.dark {
       border-color: $btn-blue-dark !important;
    }
 
-   .btn:hover{
+   .btn-primary:hover{
       background-color: #17168E;
    }
 
@@ -279,7 +281,7 @@ body.dark {
       }
    
       .page-link:hover {
-         color: $btn-blue;
+         color: $btn-blue-dark;
          background-color: #363535;
       }
    }
