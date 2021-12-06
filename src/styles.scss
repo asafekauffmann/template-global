@@ -9,9 +9,9 @@ $btn-blue: #2B2AFC;
 $white-body: #F1F1F1;
 $w-gray-header: #E1E4E7;
 $w-gray-border: #E1E4E7;
-$txt-dark: #222222;
 $gray-hover-white: #E1E4E7;
 
+$txt-dark: #222222;
 
 
 // Dark Variables
@@ -20,6 +20,7 @@ $d-gray-header: #2b2b2b;
 $d-gray-content: #1b1b1b;
 $d-gray-border: #2b2b2b;
 $d-gray-input: #242323;
+
 $txt-white: #F7F9F9;
 
 
@@ -286,7 +287,7 @@ body.dark {
       color: $txt-white;
 
       .modal-header {
-         border-bottom: 15px solid $d-gray-border;
+         border-bottom: 1px solid $d-gray-border;
          background-color: $d-gray-header;
 
          .btn-close {
