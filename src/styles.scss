@@ -6,16 +6,20 @@ $btn-blue: #2B2AFC;
 
 
 // Light Variables
-$white-body: #FBFCFC;
+$white-body: #F1F1F1;
+$w-gray-header: #E1E4E7;
+$w-gray-border: #E1E4E7;
+
 $gray-hover-white: #E1E4E7;
 
 
+
 // Dark Variables
-$gray-body: #1b1b1b;
-$gray-header: #2b2b2b;
-$gray-content: #1b1b1b;
-$gray-border: #2b2b2b;
-$gray-input: #242323;
+$d-gray-body: #1b1b1b;
+$d-gray-header: #2b2b2b;
+$d-gray-content: #1b1b1b;
+$d-gray-border: #2b2b2b;
+$d-gray-input: #242323;
 $txt-white: #F7F9F9;
 
 
@@ -28,7 +32,7 @@ $txt-white: #F7F9F9;
 }
 
 body {
-   height: 2000px;
+   height: 3000px;
    width: 100%;
 }
 
@@ -46,10 +50,10 @@ body.light {
    }
 
    .card {
-      border: 1px solid $gray-hover-white;
+      border: 1px solid $w-gray-border;
 
       .card-header {
-         background-color: $gray-hover-white;
+         background-color: $w-gray-header;
          border-bottom: none;
       }
    }
@@ -63,10 +67,11 @@ body.light {
    // Acordeon
    .accordion-item {
       width: 640px;
-      border: 1px solid rgb(225, 228, 231);
+      border: 1px solid $w-gray-border;
       
       .accordion-button {
          background-color: rgb(225, 228, 231);
+         box-shadow: none;
       }
    }
 
@@ -100,7 +105,7 @@ body.light {
    }
 
    .nav-link.active {
-      background-color: $gray-hover-white;
+      background-color: $w-gray-header;
    }
 
    .nav-tabs .nav-link.active, 
@@ -109,9 +114,15 @@ body.light {
    }
 
    // Component ngx-tag Modal
-   .modal-header {
-      background-color: rgba(0, 0, 0, 0.03);
+   .modal-content {
+      border: 1px solid $w-gray-border;
+
+      .modal-header {
+         background-color: $w-gray-header;
+         
+      }
    }
+   
    
 
 }
@@ -126,7 +137,7 @@ body.light {
 
 // Theme Dark
 body.dark {
-   background-color: $gray-body;
+   background-color: $d-gray-body;
    color:$txt-white;
    
    // Buttom
@@ -137,11 +148,11 @@ body.dark {
 
    // Card
    .card {
-      border: 1px solid $gray-border;
-      background-color: $gray-content;
+      border: 1px solid $d-gray-border;
+      background-color: $d-gray-content;
       
       .card-header {
-         background-color: $gray-header;
+         background-color: $d-gray-header;
          border-bottom: none;
       }
    }
@@ -155,11 +166,11 @@ body.dark {
    // Acordeon
    .accordion-item {
       width: 640px;
-      border: 1px solid $gray-border;
-      background-color: $gray-content;
+      border: 1px solid $d-gray-border;
+      background-color: $d-gray-content;
      
       .accordion-button {
-         background-color: $gray-header;
+         background-color: $d-gray-header;
          color: $txt-white;
       }
    }
@@ -182,7 +193,7 @@ body.dark {
    table {
       color: $txt-white;
       border-bottom: 1px solid gray;
-      background-color: $gray-body;
+      background-color: $d-gray-body;
 
       tr:hover {
          background-color: #363535;
@@ -198,8 +209,8 @@ body.dark {
       padding-left: 400px;
 
       .page-link {
-         background-color: $gray-content;
-         border: 1px solid $gray-border;
+         background-color: $d-gray-content;
+         border: 1px solid $d-gray-border;
          color: $txt-white;
       }
    
@@ -211,16 +222,16 @@ body.dark {
    
    // Form input
    .form-control {
-      background-color: $gray-input;
+      background-color: $d-gray-input;
       color: $txt-white;
-      border: 1px solid $gray-border;
+      border: 1px solid $d-gray-border;
    }
 
    // Form select options
    .form-select {
-      background-color: $gray-input;
+      background-color: $d-gray-input;
       color: $txt-white;
-      border: 1px solid $gray-border;
+      border: 1px solid $d-gray-border;
    }
 
    // Checks
@@ -237,19 +248,19 @@ body.dark {
 
    .nav-tabs .nav-link.active, 
    .nav-tabs .nav-item.show .nav-link {
-      background-color: $gray-header;
+      background-color: $d-gray-header;
       color: $btn-blue;
-      border: 1px solid $gray-border;
+      border: 1px solid $d-gray-border;
    }
   
    // Component ngx-tag Modal
    .modal-content {
-      background-color: $gray-content;
+      background-color: $d-gray-content;
       color: $txt-white;
 
       .modal-header {
-         border-bottom: 15px solid $gray-border;
-         background-color: $gray-header;
+         border-bottom: 15px solid $d-gray-border;
+         background-color: $d-gray-header;
 
          .btn-close {
             background: transparent url(./assets/icons/button-close.png) center/1em auto no-repeat;
