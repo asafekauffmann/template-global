@@ -110,7 +110,7 @@ body.light {
       border: 1px solid $btn-blue;
    }
 
-   // tabs ngx-bootstrap
+   // Tabs ngx-bootstrap
    a.nav-link {
       background-color: $white-body;
       color: $txt-dark;
@@ -125,6 +125,8 @@ body.light {
    .nav-tabs .nav-item.show .nav-link {
       color: $btn-blue; 
    }
+
+   
 
    // Component ngx-tag Modal
    .modal-content {
@@ -284,6 +286,8 @@ body.dark {
       color: $btn-blue;
       border: 1px solid $d-gray-border;
    }
+
+   
 
 
    // Component ngx-tag Modal
