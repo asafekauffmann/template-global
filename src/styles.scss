@@ -79,13 +79,20 @@ body.light {
    table {
       background-color: white;
 
-      tr:hover {
-         background-color: $gray-hover-white;
+      th {
+         border-bottom: 2px solid $w-gray-border;
+         
+         td {
+            color: gray;
+         }
       }
 
-      td {
-         color: gray;
+      tr:hover {
+         background-color: $gray-hover-white;
+         
       }
+
+      
    }
 
    // Pagination
@@ -203,14 +210,31 @@ body.dark {
       border-bottom: 1px solid gray;
       background-color: $d-gray-body;
 
+      th {
+         border-bottom: 2px solid $d-gray-border;
+      }
+
       tr:hover {
          background-color: #363535;
       }
 
       td {
          color: gray;
+         border-bottom: 2px solid $d-gray-border;
       }
+ 
    }
+
+   /* th {
+         border-bottom: 2px solid $w-gray-border;
+         
+         td {
+            color: gray;
+         }
+      } */
+
+
+
 
    // Pagination
    .pagination {
