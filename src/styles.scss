@@ -3,6 +3,7 @@
 
 // Variables color
 $btn-blue: #2B2AFC;
+$btn-blue-dark: #213C78;
 $orange: #FC9109;
 
 
@@ -22,6 +23,7 @@ $d-gray-content: #1b1b1b;
 $d-gray-border: #2b2b2b;
 $d-gray-input: #242323;
 
+$d-blue-link:  #A5A5FE;
 $txt-white: #F7F9F9;
 
 
@@ -52,6 +54,11 @@ body.light {
       border-color: $btn-blue !important;
    }
 
+   .btn:focus {
+      outline: none;
+      box-shadow: none;
+    }
+   
    .card {
       border: 1px solid $w-gray-border;
 
@@ -62,6 +69,13 @@ body.light {
    }
 
    // Menu migalha
+   .breadcrumb {
+      background-color: $w-gray-header;
+      margin: 0;
+      padding: 15px;
+      border-radius: calc(0.25rem - 1px);
+   }
+
    .breadcrumb a {
       text-decoration: none;
       color: $btn-blue;
@@ -75,6 +89,10 @@ body.light {
       .accordion-button {
          background-color: rgb(225, 228, 231);
          box-shadow: none;
+      }
+
+      .accordion-button:not(.collapsed) {
+         color: $txt-dark;
       }
    }
 
@@ -164,9 +182,18 @@ body.dark {
    
    // Buttom
    .btn-primary {
-      background-color: $btn-blue !important;
-      border-color: $btn-blue !important;
+      background-color: $btn-blue-dark/* $btn-blue */ !important;
+      border-color: $btn-blue-dark !important;
    }
+
+   .btn:hover{
+      background-color: #17168E;
+   }
+
+   .btn:focus {
+      outline: none;
+      box-shadow: none;
+    }
 
    // Card
    .card {
@@ -180,9 +207,16 @@ body.dark {
    }
 
    // Menu migalha
+   .breadcrumb {
+      background-color: $d-gray-header;
+      margin: 0;
+      padding: 15px;
+      border-radius: calc(0.25rem - 1px);
+   }
+
    .breadcrumb a {
       text-decoration: none;
-      color: $btn-blue;
+      color: $d-blue-link/* $btn-blue */;
    }
 
    // Acordeon
@@ -266,14 +300,14 @@ body.dark {
 
    // Checks
    .form-check-input:checked {
-      color:$btn-blue;
-      background-color: $btn-blue;
-      border: 1px solid $btn-blue;
+      color: $btn-blue-dark;
+      background-color: $btn-blue-dark;
+      border: 1px solid $btn-blue-dark;
    }
 
    // tabs ngx-bootstrap
    a.nav-link {
-      color: $btn-blue;
+      color: white/* $btn-blue */;
    }
 
    .nav-tabs {
@@ -283,7 +317,7 @@ body.dark {
    .nav-tabs .nav-link.active, 
    .nav-tabs .nav-item.show .nav-link {
       background-color: $d-gray-header;
-      color: $btn-blue;
+      color: $d-blue-link;
       border: 1px solid $d-gray-border;
    }
 
