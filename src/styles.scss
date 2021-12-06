@@ -82,6 +82,10 @@ body.light {
       tr:hover {
          background-color: $gray-hover-white;
       }
+
+      td {
+         color: gray;
+      }
    }
 
    // Pagination
