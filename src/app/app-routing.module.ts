@@ -1,7 +1,6 @@
 import { AberturaComponent } from './view/abertura/abertura.component';
 import { LoginComponent } from './view/login/login.component';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
