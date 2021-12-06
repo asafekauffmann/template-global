@@ -8,6 +8,8 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 })
 export class ModalComponent implements OnInit {
 
+   bsInlineValue = new Date();
+
    modalRef?: BsModalRef;
 
    constructor(private modalService: BsModalService) { }
