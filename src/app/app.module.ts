@@ -10,13 +10,17 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ModalComponent } from './modal/modal.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { LoginComponent } from './view/login/login.component';
+import { AberturaComponent } from './view/abertura/abertura.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     BootModelComponent,
-    ModalComponent
+    ModalComponent,
+    LoginComponent,
+    AberturaComponent
   ],
   imports: [
     BrowserModule,
