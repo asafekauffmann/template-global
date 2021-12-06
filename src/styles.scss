@@ -3,6 +3,7 @@
 
 // Variables color
 $btn-blue: #2B2AFC;
+$orange: #FC9109;
 
 
 // Light Variables
@@ -83,15 +84,13 @@ body.light {
 
       th {
          border-bottom: 2px solid $w-gray-border;
-         
-         td {
-            color: gray;
-         }
       }
-
       tr:hover {
          background-color: $gray-hover-white;
          
+      }
+      td {
+         color: gray;
       }
    }
 

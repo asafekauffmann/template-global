@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
    availableClasses: string[] = ["dark", "light"];
    currentClassIdx: number = 0;
- 
    bodyClass: string;
 
    constructor() {
