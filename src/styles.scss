@@ -185,6 +185,7 @@ body.dark {
    background-color: $d-gray-body;
    color:$txt-white;
 
+   // Input edit
    .form-control:focus {
       background-color: $d-gray-input;
       color: white;
