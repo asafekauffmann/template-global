@@ -49,6 +49,9 @@ body.light {
    background-color: $white-body ;
    color: $txt-dark;
    
+   .form-control {
+      background-color: orangered;
+   }
    // Buttom
    .btn-primary {
       background-color: $btn-blue-light !important;
@@ -181,6 +184,12 @@ body.light {
 body.dark {
    background-color: $d-gray-body;
    color:$txt-white;
+
+   .form-control:focus {
+      background-color: $d-gray-input;
+      color: white;
+      border: none;
+   }
    
    // Buttom
    .btn-primary {
