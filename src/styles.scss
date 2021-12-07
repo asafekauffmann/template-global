@@ -8,11 +8,13 @@ $btn-blue-light: #2037b4;
 $orange: #FC9109;
 
 
+
 // Light Variables
 $white-body: #F1F1F1;
 $w-gray-header:#DEE2E6 /* #E1E4E7 */; 
 $w-gray-border: #E1E4E7;
 $gray-hover-white: #E1E4E7;
+$w-link: #2037B4;
 
 $txt-dark: #222222;
 
@@ -49,9 +51,9 @@ body.light {
    background-color: $white-body ;
    color: $txt-dark;
    
-   .form-control {
+   /* .form-control {
       background-color: orangered;
-   }
+   } */
    // Buttom
    .btn-primary {
       background-color: $btn-blue-light !important;
