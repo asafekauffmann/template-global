@@ -13,6 +13,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { LoginComponent } from './view/login/login.component';
 import { AberturaComponent } from './view/abertura/abertura.component';
 import { RecepcaoComponent } from './view/recepcao/recepcao.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { NavComponent } from './shared/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RecepcaoComponent } from './view/recepcao/recepcao.component';
     ModalComponent,
     LoginComponent,
     AberturaComponent,
-    RecepcaoComponent
+    RecepcaoComponent,
+    HeaderComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
