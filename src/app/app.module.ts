@@ -12,6 +12,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { LoginComponent } from './view/login/login.component';
 import { AberturaComponent } from './view/abertura/abertura.component';
+import { RecepcaoComponent } from './view/recepcao/recepcao.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AberturaComponent } from './view/abertura/abertura.component';
     BootModelComponent,
     ModalComponent,
     LoginComponent,
-    AberturaComponent
+    AberturaComponent,
+    RecepcaoComponent
   ],
   imports: [
     BrowserModule,

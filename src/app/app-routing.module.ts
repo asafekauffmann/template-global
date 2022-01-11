@@ -1,3 +1,4 @@
+import { RecepcaoComponent } from './view/recepcao/recepcao.component';
 import { AberturaComponent } from './view/abertura/abertura.component';
 import { LoginComponent } from './view/login/login.component';
 import { AppComponent } from './app.component';
@@ -13,6 +14,9 @@ const routes: Routes = [
    },
    {
       path: 'abertura', component: AberturaComponent
+   },
+   {
+      path: 'recepcao', component: RecepcaoComponent
    }
 ];
 
